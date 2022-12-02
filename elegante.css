@@ -189,6 +189,7 @@ nav{
 }
 #discover .tabs div{
     margin: 0px 30px;
+    cursor: pointer;
 }
 #highlighted{
     margin-top: 100px;

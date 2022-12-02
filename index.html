@@ -346,5 +346,23 @@
             </div>
         </div>
     </footer>
+    <script>
+        var block = document.querySelector('#categories .categories')
+        document.querySelector('#categories .navigate .right').addEventListener('click', function(){
+                        block.style.left = "-70px"
+                        block.animate('smooth')
+        })
+        document.querySelector('#categories .navigate .left').addEventListener('click', function(){
+                        block.style.left = "150px"
+                        block.animate('smooth')
+        })
+        var tabs = document.querySelectorAll('#discover .tabs div')
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function(){
+                document.querySelector('#discover .tabs div.active').classList.remove('active')
+                tab.classList.add('active')
+            })
+        });
+    </script>
 </body>
 </html>
